@@ -3132,10 +3132,10 @@ vertical-align: -.125em;
 </header>
 
 
-<p>GITHUB URL: <a href="https://github.com/cmsc-vcu/cmsc408-sp2025-hw8-jleonard99" class="uri">https://github.com/cmsc-vcu/cmsc408-sp2025-hw8-jleonard99</a></p>
+<p>GITHUB URL: <a href="https://github.com/cmsc-vcu/cmsc408-sp2025-hw8-ben143b.git" class="uri">https://github.com/cmsc-vcu/cmsc408-sp2025-hw8-ben143b.git</a></p>
 <section id="problem-background" class="level1">
 <h1>Problem Background</h1>
-<div id="fb9b8d14" class="cell" data-execution_count="1">
+<div id="56fb0a4e" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> helpers <span class="im">import</span> create_database_engine, run_sql_and_return_df, run_sql_and_return_html, create_db_wrapper, execute_ddl_from_file, execute_ddl</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load these variables from .env file.</span></span>
@@ -3148,7 +3148,7 @@ vertical-align: -.125em;
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>cnx,config <span class="op">=</span> create_db_wrapper( config_map )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="a9dda1ec" class="cell" data-execution_count="2">
+<div id="7ca57b1a" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do a quick test of the connection and trap the errors better!</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>run_sql_and_return_html(cnx,<span class="st">&quot;&quot;&quot;</span></span>
@@ -3249,7 +3249,7 @@ Total Rows: 3, Total Columns: 3
 <section id="task-1" class="level2">
 <h2 class="anchored" data-anchor-id="task-1">Task 1</h2>
 <p>How many records are in the country table?</p>
-<div id="525865bd" class="cell" data-execution_count="3">
+<div id="e680453c" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># How many records are in the world_bank_data.wdi_country table?</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (skills: select, aggregate)</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3298,7 +3298,7 @@ Total Rows: 1, Total Columns: 1
 <section id="task-2" class="level2">
 <h2 class="anchored" data-anchor-id="task-2">Task 2</h2>
 <p>Explore the first 5 records in the country table.</p>
-<div id="bccbed5b" class="cell" data-execution_count="4">
+<div id="4b38c327" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## write out the first 10 records and look at the columns</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Do you see any blanks or missing data?</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">## (skills: select, limit)</span></span>
@@ -4101,7 +4101,7 @@ Total Rows: 5, Total Columns: 31
 <section id="task-3" class="level2">
 <h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
 <p>List all non-countries.</p>
-<div id="de0a3eb1" class="cell" data-execution_count="5">
+<div id="04d7c2af" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">## task 3</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Which records are NOT for countries, that is they&#39;re for regions or groups of countries.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">## How can you tell?</span></span>
@@ -5545,7 +5545,7 @@ Total Rows: 10, Total Columns: 31
 <section id="task-4" class="level2">
 <h2 class="anchored" data-anchor-id="task-4">Task 4</h2>
 <p>Create your own copy of WDI_Country containing just countries.</p>
-<div id="6c25b205" class="cell" data-execution_count="6">
+<div id="c0e7d021" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">## task 4</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">## The WDI table clearly contains information for countries and non-countries</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">## using CREATE TABLE ... SELECT from WHERE syntax.</span></span>
@@ -5558,7 +5558,7 @@ Total Rows: 10, Total Columns: 31
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="st">drop table if exists wdi_country;</span></span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="d4f996ec" class="cell" data-execution_count="7">
+<div id="aa2c6d81" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create table</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>execute_ddl(cnx,<span class="st">&quot;&quot;&quot;</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">create table wdi_country as</span></span>
@@ -5567,7 +5567,7 @@ Total Rows: 10, Total Columns: 31
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="st">WHERE region IS NOT NULL;</span></span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="980949f0" class="cell" data-execution_count="8">
+<div id="5db64ffc" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># show number of records</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>run_sql_and_return_html(cnx,<span class="st">&quot;&quot;&quot;</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="st">SELECT COUNT(*) AS &quot;Row Count&quot;</span></span>
@@ -5612,7 +5612,7 @@ Total Rows: 1, Total Columns: 1
 <section id="task-5" class="level2">
 <h2 class="anchored" data-anchor-id="task-5">Task 5</h2>
 <p>According to the World Bank, in 2020 there were how many countries in the world?</p>
-<div id="713def42" class="cell" data-execution_count="9">
+<div id="b313b11c" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">## (skills: select, aggregate)</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>run_sql_and_return_html(cnx,<span class="st">&quot;&quot;&quot;</span></span>
@@ -5659,7 +5659,7 @@ Total Rows: 1, Total Columns: 1
 <section id="task-6" class="level2">
 <h2 class="anchored" data-anchor-id="task-6">Task 6</h2>
 <p>What are all unique values of region in the wdi_country table?</p>
-<div id="e07b6a44" class="cell" data-execution_count="10">
+<div id="4e8d127c" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Let&#39;s investigate the country_region field.</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">## What is the domain of the country_region field? That is,</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">## what are the unique values found there?</span></span>
@@ -5757,7 +5757,7 @@ Total Rows: 7, Total Columns: 1
 <section id="task-7" class="level2">
 <h2 class="anchored" data-anchor-id="task-7">Task 7</h2>
 <p>How many countries are in each region?</p>
-<div id="10bd1fdd" class="cell" data-execution_count="11">
+<div id="c128b035" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">## How many countries are in each region?</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">## (skills: select, aggregate, group by, order by)</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -5886,7 +5886,7 @@ Total Rows: 7, Total Columns: 2
 <section id="task-8" class="level2">
 <h2 class="anchored" data-anchor-id="task-8">Task 8</h2>
 <p>List the country full names and regions for all countries in north america.</p>
-<div id="6f604dd7" class="cell" data-execution_count="12">
+<div id="d7141432" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">## List the country full names and regions for all countries in north america</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">## (skills: select, where, order by)</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -5964,7 +5964,7 @@ Total Rows: 5, Total Columns: 1
 </section>
 <section id="task-9" class="level2">
 <h2 class="anchored" data-anchor-id="task-9">Task 9</h2>
-<div id="fbe59e40" class="cell" data-execution_count="13">
+<div id="22ca6ad3" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">## The last World Cup soccer tournament was hosted by Qatar.</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">## What region contains Qatar?  List the region, country short name and full name</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">## (skills: select, where)</span></span>
@@ -6029,7 +6029,7 @@ Total Rows: 1, Total Columns: 3
 </section>
 <section id="task-10" class="level2">
 <h2 class="anchored" data-anchor-id="task-10">Task 10</h2>
-<div id="feeb5cba" class="cell" data-execution_count="14">
+<div id="03adc1f3" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">## There are two abbreviation fields in the data country_abbr and country_wb_abbr.</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">## List the country code, short name, abbr, wb_abbr and region for all the countries</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">## where the abbr and wb_abbr are different.</span></span>
@@ -6448,7 +6448,7 @@ Total Rows: 23, Total Columns: 3
 </section>
 <section id="task-11" class="level2">
 <h2 class="anchored" data-anchor-id="task-11">Task 11</h2>
-<div id="e4b87083" class="cell" data-execution_count="15">
+<div id="60c64b88" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Now, let&#39;s investigate the &quot;income category&quot; field.</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">## List the income categories and the number of countries in each</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co">## income category in descending order of most countries to least.</span></span>
@@ -6555,7 +6555,7 @@ Total Rows: 5, Total Columns: 2
 </section>
 <section id="task-12" class="level2">
 <h2 class="anchored" data-anchor-id="task-12">Task 12</h2>
-<div id="cf987c41" class="cell" data-execution_count="16">
+<div id="f5a395f4" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Mystery task.  Looking at the table from Task 11 (anything odd?) write the</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co">## next obvious query based on the results in the table.</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co">## At a minimum, your query should put country short name in the first column.</span></span>
@@ -7982,24 +7982,26 @@ Total Rows: 173, Total Columns: 1
 </section>
 <section id="task-13" class="level2">
 <h2 class="anchored" data-anchor-id="task-13">Task 13</h2>
-<div id="5b52f758" class="cell" data-execution_count="17">
+<div id="5a926e77" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">## OK, this HAS to be an error. Let&#39;s make a assumption that the country </span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co">## in question, because they are oil-rich, are &quot;high income&quot;.  </span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co">## Write an update comment to correct the issue.</span></span>
 <span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co">## </span><span class="al">NOTE</span><span class="co"> - if you get this wrong, all subsequent tables will be wrong!</span></span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>execute_ddl(cnx,<span class="st">&quot;&quot;&quot;</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="st">UPDATE wdi_country</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="st">  SET `Income Group` = &#39;High income&#39;</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="st">  WHERE `Country Code` = &#39;QAT&#39;;</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="04f97100" class="cell" data-execution_count="18">
+<div id="f3be396e" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Now, display the country again to verify the change stuck!</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>run_sql_and_return_html(cnx,<span class="st">&quot;&quot;&quot;</span></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="st">SELECT *</span></span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="st">FROM wdi_country</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="st">WHERE `IMF data dissemination standard` LIKE &#39;%SDDS%&#39;;</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="st">WHERE `IMF data dissemination standard` LIKE &#39;</span><span class="sc">%%</span><span class="st">SDDS</span><span class="sc">%%</span><span class="st">&#39;;</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;&quot;&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <table class="dataframe table table-sm table-striped small">
 
@@ -8008,11 +8010,127 @@ Total Rows: 173, Total Columns: 1
 <tr>
 
 <th>
-ErrorType
+Country Code
 </th>
 
 <th>
-ErrorMessage
+Short Name
+</th>
+
+<th>
+Table Name
+</th>
+
+<th>
+Long Name
+</th>
+
+<th>
+2-alpha code
+</th>
+
+<th>
+Currency Unit
+</th>
+
+<th>
+Special Notes
+</th>
+
+<th>
+Region
+</th>
+
+<th>
+Income Group
+</th>
+
+<th>
+WB-2 code
+</th>
+
+<th>
+National accounts base year
+</th>
+
+<th>
+National accounts reference year
+</th>
+
+<th>
+SNA price valuation
+</th>
+
+<th>
+Lending category
+</th>
+
+<th>
+Other groups
+</th>
+
+<th>
+System of National Accounts
+</th>
+
+<th>
+Alternative conversion factor
+</th>
+
+<th>
+PPP survey year
+</th>
+
+<th>
+Balance of Payments Manual in use
+</th>
+
+<th>
+External debt Reporting status
+</th>
+
+<th>
+System of trade
+</th>
+
+<th>
+Government Accounting concept
+</th>
+
+<th>
+IMF data dissemination standard
+</th>
+
+<th>
+Latest population census
+</th>
+
+<th>
+Latest household survey
+</th>
+
+<th>
+Source of most recent Income and expenditure data
+</th>
+
+<th>
+Vital registration complete
+</th>
+
+<th>
+Latest agricultural census
+</th>
+
+<th>
+Latest industrial data
+</th>
+
+<th>
+Latest trade data
+</th>
+
+<th>
+Latest water withdrawal data
 </th>
 
 </tr>
@@ -8024,29 +8142,9910 @@ ErrorMessage
 <tr>
 
 <td>
-UnknownError
+ARG
 </td>
 
 <td>
-Unknown Error: unsupported format character &#39;S&#39; (0x53) at index 74
+Argentina
+</td>
+
+<td>
+Argentina
+</td>
+
+<td>
+Argentine Republic
+</td>
+
+<td>
+AR
+</td>
+
+<td>
+Argentine peso
+</td>
+
+<td>
+The World Bank systematically assesses the appropriateness of official exchange rates as conversion factors. In this country, multiple or dual exchange rate activity exists and must be accounted for appropriately in underlying statistics. An alternative estimate (“alternative conversion factor” - PA.NUS.ATLS) is thus calculated as a weighted average of the different exchange rates in use in the country. Doing so better reflects economic reality and leads to more accurate cross-country comparisons and country classifications by income level. For this country, this applies to the period 1971-2018. Alternative conversion factors are used in the Atlas methodology and elsewhere in World Development Indicators as single-year conversion factors.
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+AR
+</td>
+
+<td>
+2004
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2019/20
+</td>
+
+<td>
+Integrated household survey (IHS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2008
+</td>
+
+<td>
+2002.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
 </td>
 
 </tr>
 
 <tr>
-<td colspan="2" style="text-align: left;">
-Total Rows: 1, Total Columns: 2
+
+<td>
+ARM
+</td>
+
+<td>
+Armenia
+</td>
+
+<td>
+Armenia
+</td>
+
+<td>
+Republic of Armenia
+</td>
+
+<td>
+AM
+</td>
+
+<td>
+Armenian dram
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+AM
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Demographic and Health Survey, 2015/16
+</td>
+
+<td>
+Integrated household survey (IHS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+AUS
+</td>
+
+<td>
+Australia
+</td>
+
+<td>
+Australia
+</td>
+
+<td>
+Commonwealth of Australia
+</td>
+
+<td>
+AU
+</td>
+
+<td>
+Australian dollar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+AU
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2023.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2010
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2015-2016
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+AUT
+</td>
+
+<td>
+Austria
+</td>
+
+<td>
+Austria
+</td>
+
+<td>
+Republic of Austria
+</td>
+
+<td>
+AT
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 13.7603 Austrian schilling. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+AT
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+BEL
+</td>
+
+<td>
+Belgium
+</td>
+
+<td>
+Belgium
+</td>
+
+<td>
+Kingdom of Belgium
+</td>
+
+<td>
+BE
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 40.3399 Belgian franc. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+BE
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+BGR
+</td>
+
+<td>
+Bulgaria
+</td>
+
+<td>
+Bulgaria
+</td>
+
+<td>
+Republic of Bulgaria
+</td>
+
+<td>
+BG
+</td>
+
+<td>
+Bulgarian lev
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+BG
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+Multitopic Household Survey 2007
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2014
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+BLR
+</td>
+
+<td>
+Belarus
+</td>
+
+<td>
+Belarus
+</td>
+
+<td>
+Republic of Belarus
+</td>
+
+<td>
+BY
+</td>
+
+<td>
+Belarusian rubel
+</td>
+
+<td>
+Data before 20150were adjusted to reflect the0new denomination effective from July 1, 2016 (BYN), a decrease of 10,000 times (1 BYN = 10,000 BYR)
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+BY
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Estimate
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2019
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2019
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+BRA
+</td>
+
+<td>
+Brazil
+</td>
+
+<td>
+Brazil
+</td>
+
+<td>
+Federative Republic of Brazil
+</td>
+
+<td>
+BR
+</td>
+
+<td>
+Brazilian real
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+BR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2010.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Preliminary
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+National Health Survey, 2013
+</td>
+
+<td>
+Integrated household survey (IHS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2006
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CAN
+</td>
+
+<td>
+Canada
+</td>
+
+<td>
+Canada
+</td>
+
+<td>
+Canada
+</td>
+
+<td>
+CA
+</td>
+
+<td>
+Canadian dollar
+</td>
+
+<td>
+Fiscal year end: March 31; reporting period for national accounts data: CY.
+</td>
+
+<td>
+North America
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+CA
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Labor force survey (LFS), 2013
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CHE
+</td>
+
+<td>
+Switzerland
+</td>
+
+<td>
+Switzerland
+</td>
+
+<td>
+Switzerland
+</td>
+
+<td>
+CH
+</td>
+
+<td>
+Swiss franc
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+CH
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected). Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CHL
+</td>
+
+<td>
+Chile
+</td>
+
+<td>
+Chile
+</td>
+
+<td>
+Republic of Chile
+</td>
+
+<td>
+CL
+</td>
+
+<td>
+Chilean peso
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+CL
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2017
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CHN
+</td>
+
+<td>
+China
+</td>
+
+<td>
+China
+</td>
+
+<td>
+People&#39;s Republic of China
+</td>
+
+<td>
+CN
+</td>
+
+<td>
+Chinese yuan
+</td>
+
+<td>
+On 1 July 1997 China resumed its exercise of sovereignty over Hong Kong, and on 20 December 1999, China resumed its exercise of sovereignty over Macao. Unless otherwise noted, data for China do not include data for Hong Kong SAR, China; Macao SAR, China; or Taiwan, China.\n\nThe World Bank systematically assesses the appropriateness of official exchange rates as conversion factors. In this country, multiple or dual exchange rate activity exists and must be accounted for appropriately in underlying statistics. An alternative estimate (“alternative conversion factor” - PA.NUS.ATLS) is thus calculated as a weighted average of the different exchange rates in use in the country. Doing so better reflects economic reality and leads to more accurate cross-country comparisons and country classifications by income level. For this country, this applies to the period 1978-1993. Alternative conversion factors are used in the Atlas methodology and elsewhere in World Development Indicators as single-year conversion factors.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+CN
+</td>
+
+<td>
+2020
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at producer prices (VAP)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Preliminary
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+National Sample Survey on Population Changes, 2014
+</td>
+
+<td>
+Integrated household survey (IHS), 2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+2007.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+COL
+</td>
+
+<td>
+Colombia
+</td>
+
+<td>
+Colombia
+</td>
+
+<td>
+Republic of Colombia
+</td>
+
+<td>
+CO
+</td>
+
+<td>
+Colombian peso
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+CO
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2018
+</td>
+
+<td>
+Demographic and Health Survey, 2015
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CRI
+</td>
+
+<td>
+Costa Rica
+</td>
+
+<td>
+Costa Rica
+</td>
+
+<td>
+Republic of Costa Rica
+</td>
+
+<td>
+CR
+</td>
+
+<td>
+Costa Rican colon
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+CR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2017.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2018
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CYP
+</td>
+
+<td>
+Cyprus
+</td>
+
+<td>
+Cyprus
+</td>
+
+<td>
+Republic of Cyprus
+</td>
+
+<td>
+CY
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2008: 1 euro = 0.585274 Cyprus pounds. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+CY
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2010.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+CZE
+</td>
+
+<td>
+Czechia
+</td>
+
+<td>
+Czechia
+</td>
+
+<td>
+Czech Republic
+</td>
+
+<td>
+CZ
+</td>
+
+<td>
+Czech koruna
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+CZ
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+DEU
+</td>
+
+<td>
+Germany
+</td>
+
+<td>
+Germany
+</td>
+
+<td>
+Federal Republic of Germany
+</td>
+
+<td>
+DE
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 1.95583 Deutsche Mark. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+DE
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers and sample surveys while data on housing characteristics are collected through full field enumeration.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+DNK
+</td>
+
+<td>
+Denmark
+</td>
+
+<td>
+Denmark
+</td>
+
+<td>
+Kingdom of Denmark
+</td>
+
+<td>
+DK
+</td>
+
+<td>
+Danish krone
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+DK
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ECU
+</td>
+
+<td>
+Ecuador
+</td>
+
+<td>
+Ecuador
+</td>
+
+<td>
+Republic of Ecuador
+</td>
+
+<td>
+EC
+</td>
+
+<td>
+U.S. dollar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+EC
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Reproductive Health Survey, 2004
+</td>
+
+<td>
+Integrated household survey (IHS), 2018
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2008.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+EGY
+</td>
+
+<td>
+Egypt
+</td>
+
+<td>
+Egypt, Arab Rep.
+</td>
+
+<td>
+Arab Republic of Egypt
+</td>
+
+<td>
+EG
+</td>
+
+<td>
+Egyptian pound
+</td>
+
+<td>
+The reporting period for national accounts data is designated as either calendar year basis (CY) or fiscal year basis (FY). For this country, it is fiscal year-based (fiscal year-end: June 30) for the years 1980 and after. The data from 1973 to 1979 refer to the calendar year data. Also, an estimate (PA.NUS.ATLS) of the exchange rate covers the same period and thus differs from the official exchange rate (CY). \n\nIn addition, the World Bank systematically assesses the appropriateness of official exchange rates as conversion factors. In this country, multiple or dual exchange rate activity exists and must be accounted for appropriately in underlying statistics. An alternative estimate (“alternative conversion factor” - PA.NUS.ATLS) is thus calculated as a weighted average of the different exchange rates in use in the country. Doing so better reflects economic reality and leads to more accurate cross-country comparisons and country classifications by income level. For this country, this applies to the period 1965-2021. Alternative conversion factors are used in the Atlas methodology and elsewhere in World Development Indicators as single-year conversion factors.\n\nThe national accounts data for Egypt has been updated to reflect local constant prices in the year 2022, moving from the previous reference of 2017.
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+EG
+</td>
+
+<td>
+2021/22
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 1993 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM5 (Converted into BPM6 by IMF)
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2017
+</td>
+
+<td>
+Health Issues Survey, 2015
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2009-2010
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ESP
+</td>
+
+<td>
+Spain
+</td>
+
+<td>
+Spain
+</td>
+
+<td>
+Kingdom of Spain
+</td>
+
+<td>
+ES
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 166.386 Spanish peseta. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+ES
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2009
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+EST
+</td>
+
+<td>
+Estonia
+</td>
+
+<td>
+Estonia
+</td>
+
+<td>
+Republic of Estonia
+</td>
+
+<td>
+EE
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+The following irrevocable euro conversion rate entered into force on January 1, 2011: 1 euro = 15.6466 Estonian kroon. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+EE
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2012" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+FIN
+</td>
+
+<td>
+Finland
+</td>
+
+<td>
+Finland
+</td>
+
+<td>
+Republic of Finland
+</td>
+
+<td>
+FI
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 5.94573 Finnish markka. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+FI
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2020 (expected). Population figures compiled from administrative registers.
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+FRA
+</td>
+
+<td>
+France
+</td>
+
+<td>
+France
+</td>
+
+<td>
+French Republic
+</td>
+
+<td>
+FR
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 6.55957 French franc. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+FR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+GBR
+</td>
+
+<td>
+United Kingdom
+</td>
+
+<td>
+United Kingdom
+</td>
+
+<td>
+United Kingdom of Great Britain and Northern Ireland
+</td>
+
+<td>
+GB
+</td>
+
+<td>
+Pound sterling
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+GB
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+GEO
+</td>
+
+<td>
+Georgia
+</td>
+
+<td>
+Georgia
+</td>
+
+<td>
+Georgia
+</td>
+
+<td>
+GE
+</td>
+
+<td>
+Georgian lari
+</td>
+
+<td>
+Includes self-governed areas only, which mostly exclude Abkhazia and South Ossetia, but small areas in Abkhazia and South Ossetia are included before 2008 or 2009 because of the changes in self-governed areas.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+GE
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2019.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2018
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+GRC
+</td>
+
+<td>
+Greece
+</td>
+
+<td>
+Greece
+</td>
+
+<td>
+Hellenic Republic
+</td>
+
+<td>
+GR
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 340.75 Greek drachma. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+GR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2009
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+HKG
+</td>
+
+<td>
+Hong Kong SAR, China
+</td>
+
+<td>
+Hong Kong SAR, China
+</td>
+
+<td>
+Hong Kong Special Administrative Region of the People&#39;s Republic of China
+</td>
+
+<td>
+HK
+</td>
+
+<td>
+Hong Kong dollar
+</td>
+
+<td>
+On 1 July 1997 China resumed its exercise of sovereignty over Hong Kong. Unless otherwise noted, data for China do not include data for Hong Kong SAR, China; Macao SAR, China; or Taiwan, China. Agriculture value added includes mining and quarrying.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+HK
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2022.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2016" type="1">
+<li>The population by-censuses for 1986 and 1996 were based on one-in-seven sample of the population, while that for 2006 was based on one-in-ten sample of the population.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+HRV
+</td>
+
+<td>
+Croatia
+</td>
+
+<td>
+Croatia
+</td>
+
+<td>
+Republic of Croatia
+</td>
+
+<td>
+HR
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2023: 1 euro = 7.53450 Croatian kuna. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+HR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2021.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+<ol start="2010" type="1">
+<li>Economic Census, Natural Resources Census, Livestock Census, Livestock and Aquaculture Census or Sample Agricultural Census.
+</li></ol></td>
+
+<td>
+1996.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+HUN
+</td>
+
+<td>
+Hungary
+</td>
+
+<td>
+Hungary
+</td>
+
+<td>
+Hungary
+</td>
+
+<td>
+HU
+</td>
+
+<td>
+Hungarian forint
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+HU
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2014
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+IDN
+</td>
+
+<td>
+Indonesia
+</td>
+
+<td>
+Indonesia
+</td>
+
+<td>
+Republic of Indonesia
+</td>
+
+<td>
+ID
+</td>
+
+<td>
+Indonesian rupiah
+</td>
+
+<td>
+Fiscal year end: March 31; reporting period for national accounts data: CY. Data for Indonesia include Timor-Leste through 1999 unless otherwise noted.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+ID
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Demographic and Health Survey, 2017; Indonesia Young Adult Reproductive Health Survey , 2017
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2013
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+IND
+</td>
+
+<td>
+India
+</td>
+
+<td>
+India
+</td>
+
+<td>
+Republic of India
+</td>
+
+<td>
+IN
+</td>
+
+<td>
+Indian rupee
+</td>
+
+<td>
+The reporting period for national accounts data is designated as either calendar year basis (CY) or fiscal year basis (FY). For this country, it is fiscal year-based (fiscal year-end: March 31). Also, an estimate (PA.NUS.ATLS) of the exchange rate covers the same period and thus differs from the official exchange rate (CY).
+</td>
+
+<td>
+South Asia
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+IN
+</td>
+
+<td>
+2011/12
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+Demographic and Health Survey, 2019/20
+</td>
+
+<td>
+Integrated household survey (IHS), 2011/12
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2010-2011
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+IRL
+</td>
+
+<td>
+Ireland
+</td>
+
+<td>
+Ireland
+</td>
+
+<td>
+Ireland
+</td>
+
+<td>
+IE
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 0.787564 Irish pound. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+IE
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ISL
+</td>
+
+<td>
+Iceland
+</td>
+
+<td>
+Iceland
+</td>
+
+<td>
+Republic of Iceland
+</td>
+
+<td>
+IS
+</td>
+
+<td>
+Iceland krona
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+IS
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2014
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2005.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ISR
+</td>
+
+<td>
+Israel
+</td>
+
+<td>
+Israel
+</td>
+
+<td>
+State of Israel
+</td>
+
+<td>
+IL
+</td>
+
+<td>
+Israeli new shekel
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+IL
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected). Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2012
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ITA
+</td>
+
+<td>
+Italy
+</td>
+
+<td>
+Italy
+</td>
+
+<td>
+Italian Republic
+</td>
+
+<td>
+IT
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 1936.27 Italian lira. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+IT
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2012" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+JOR
+</td>
+
+<td>
+Jordan
+</td>
+
+<td>
+Jordan
+</td>
+
+<td>
+Hashemite Kingdom of Jordan
+</td>
+
+<td>
+JO
+</td>
+
+<td>
+Jordanian dinar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+JO
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+Demographic and Health Survey, 2017/18
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2010
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+JPN
+</td>
+
+<td>
+Japan
+</td>
+
+<td>
+Japan
+</td>
+
+<td>
+Japan
+</td>
+
+<td>
+JP
+</td>
+
+<td>
+Japanese yen
+</td>
+
+<td>
+Fiscal year end: March 31; reporting period for national accounts data: CY.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+JP
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Integrated household survey (IHS), 2008
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+KAZ
+</td>
+
+<td>
+Kazakhstan
+</td>
+
+<td>
+Kazakhstan
+</td>
+
+<td>
+Republic of Kazakhstan
+</td>
+
+<td>
+KZ
+</td>
+
+<td>
+Kazakh tenge
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+KZ
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2005.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 1993 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2015
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2017
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2006-2007
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+KGZ
+</td>
+
+<td>
+Kyrgyz Republic
+</td>
+
+<td>
+Kyrgyz Republic
+</td>
+
+<td>
+Kyrgyz Republic
+</td>
+
+<td>
+KG
+</td>
+
+<td>
+Kyrgyz som
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+KG
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2019.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IDA
+</td>
+
+<td>
+HIPC
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2018
+</td>
+
+<td>
+Integrated household survey (IHS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+KOR
+</td>
+
+<td>
+Korea
+</td>
+
+<td>
+Korea, Rep.
+</td>
+
+<td>
+Republic of Korea
+</td>
+
+<td>
+KR
+</td>
+
+<td>
+Korean won
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+KR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2012
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010, 2015
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+LKA
+</td>
+
+<td>
+Sri Lanka
+</td>
+
+<td>
+Sri Lanka
+</td>
+
+<td>
+Democratic Socialist Republic of Sri Lanka
+</td>
+
+<td>
+LK
+</td>
+
+<td>
+Sri Lankan rupee
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+South Asia
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+LK
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IDA
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2012
+</td>
+
+<td>
+Demographic and Health Survey, 2006/07
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2013-2014
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2017.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+LTU
+</td>
+
+<td>
+Lithuania
+</td>
+
+<td>
+Lithuania
+</td>
+
+<td>
+Republic of Lithuania
+</td>
+
+<td>
+LT
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2015: 1 euro = 3.45280 Lithuanian litas. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+LT
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2020 (expected). Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+LUX
+</td>
+
+<td>
+Luxembourg
+</td>
+
+<td>
+Luxembourg
+</td>
+
+<td>
+Grand Duchy of Luxembourg
+</td>
+
+<td>
+LU
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 40.3399 Luxembourg franc. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+LU
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+LVA
+</td>
+
+<td>
+Latvia
+</td>
+
+<td>
+Latvia
+</td>
+
+<td>
+Republic of Latvia
+</td>
+
+<td>
+LV
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2014: 1 euro = 0.702804 Latvian lats. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries. Based on data from EUROSTAT, the new reference year is 2010.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+LV
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MAR
+</td>
+
+<td>
+Morocco
+</td>
+
+<td>
+Morocco
+</td>
+
+<td>
+Kingdom of Morocco
+</td>
+
+<td>
+MA
+</td>
+
+<td>
+Moroccan dirham
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+MA
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+Morocco National Survey on Population and Family Health, 2010/11
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2013
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MDA
+</td>
+
+<td>
+Moldova
+</td>
+
+<td>
+Moldova
+</td>
+
+<td>
+Republic of Moldova
+</td>
+
+<td>
+MD
+</td>
+
+<td>
+Moldovan leu
+</td>
+
+<td>
+Excluding Transnistria. For 1950-94, World Bank estimates using UN World Population Prospects&#39; growth rates of whole Moldova.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+MD
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2012
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MEX
+</td>
+
+<td>
+Mexico
+</td>
+
+<td>
+Mexico
+</td>
+
+<td>
+United Mexican States
+</td>
+
+<td>
+MX
+</td>
+
+<td>
+Mexican peso
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+MX
+</td>
+
+<td>
+2018
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2015
+</td>
+
+<td>
+Integrated household survey (IHS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MKD
+</td>
+
+<td>
+North Macedonia
+</td>
+
+<td>
+North Macedonia
+</td>
+
+<td>
+Republic of North Macedonia
+</td>
+
+<td>
+MK
+</td>
+
+<td>
+Macedonian denar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+MK
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2005.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2018/19
+</td>
+
+<td>
+Income survey (IS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+2010.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MLT
+</td>
+
+<td>
+Malta
+</td>
+
+<td>
+Malta
+</td>
+
+<td>
+Republic of Malta
+</td>
+
+<td>
+MT
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2008: 1 euro = 0.4293 Maltese lira. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries. National accounts data source from 1995 to 2015 is Eurostat; prior to 1995 is UN.
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+MT
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2009.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MNG
+</td>
+
+<td>
+Mongolia
+</td>
+
+<td>
+Mongolia
+</td>
+
+<td>
+Mongolia
+</td>
+
+<td>
+MN
+</td>
+
+<td>
+Mongolian tugrik
+</td>
+
+<td>
+The World Bank systematically assesses the appropriateness of official exchange rates as conversion factors. In this country, multiple or dual exchange rate activity exists and must be accounted for appropriately in underlying statistics. An alternative estimate (“alternative conversion factor” - PA.NUS.ATLS) is thus calculated as a weighted average of the different exchange rates in use in the country. Doing so better reflects economic reality and leads to more accurate cross-country comparisons and country classifications by income level. For this country, this applies to the period 1991-2004. Alternative conversion factors are used in the Atlas methodology and elsewhere in World Development Indicators as single-year conversion factors.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+MN
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2018
+</td>
+
+<td>
+Integrated household survey (IHS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+2011.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MUS
+</td>
+
+<td>
+Mauritius
+</td>
+
+<td>
+Mauritius
+</td>
+
+<td>
+Republic of Mauritius
+</td>
+
+<td>
+MU
+</td>
+
+<td>
+Mauritian rupee
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Sub-Saharan Africa
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+MU
+</td>
+
+<td>
+2018
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Integrated household survey (IHS), 2012
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+MYS
+</td>
+
+<td>
+Malaysia
+</td>
+
+<td>
+Malaysia
+</td>
+
+<td>
+Malaysia
+</td>
+
+<td>
+MY
+</td>
+
+<td>
+Malaysian ringgit
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+MY
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+<ol start="2015" type="1">
+<li>Economic Census, Natural Resources Census, Livestock Census, Livestock and Aquaculture Census or Sample Agricultural Census.
+</li></ol></td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+NLD
+</td>
+
+<td>
+Netherlands
+</td>
+
+<td>
+Netherlands
+</td>
+
+<td>
+Kingdom of the Netherlands
+</td>
+
+<td>
+NL
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 2.20371 Netherlands guilder. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+NL
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+NOR
+</td>
+
+<td>
+Norway
+</td>
+
+<td>
+Norway
+</td>
+
+<td>
+Kingdom of Norway
+</td>
+
+<td>
+NO
+</td>
+
+<td>
+Norwegian krone
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+NO
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2014
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+PER
+</td>
+
+<td>
+Peru
+</td>
+
+<td>
+Peru
+</td>
+
+<td>
+Republic of Peru
+</td>
+
+<td>
+PE
+</td>
+
+<td>
+Peruvian new sol
+</td>
+
+<td>
+The World Bank systematically assesses the appropriateness of official exchange rates as conversion factors. In this country, multiple or dual exchange rate activity exists and must be accounted for appropriately in underlying statistics. An alternative estimate (“alternative conversion factor” - PA.NUS.ATLS) is thus calculated as a weighted average of the different exchange rates in use in the country. Doing so better reflects economic reality and leads to more accurate cross-country comparisons and country classifications by income level. For this country, this applies to the period 1988-2009. Alternative conversion factors are used in the Atlas methodology and elsewhere in World Development Indicators as single-year conversion factors.
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+PE
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2017
+</td>
+
+<td>
+Continuous Demographic and Health Survey, 2014
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2012
+</td>
+
+<td>
+2011.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+PHL
+</td>
+
+<td>
+Philippines
+</td>
+
+<td>
+Philippines
+</td>
+
+<td>
+Republic of the Philippines
+</td>
+
+<td>
+PH
+</td>
+
+<td>
+Philippine peso
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+PH
+</td>
+
+<td>
+2018
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at producer prices (VAP)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Demographic and Health Survey, 2017
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2012
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+POL
+</td>
+
+<td>
+Poland
+</td>
+
+<td>
+Poland
+</td>
+
+<td>
+Republic of Poland
+</td>
+
+<td>
+PL
+</td>
+
+<td>
+Polish zloty
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+PL
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+PRT
+</td>
+
+<td>
+Portugal
+</td>
+
+<td>
+Portugal
+</td>
+
+<td>
+Portuguese Republic
+</td>
+
+<td>
+PT
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate was adopted by the EU Council on January 1, 1999: 1 euro = 200.482 Portuguese escudo. Please note that historical data before 1999 are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+PT
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2009
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+PSE
+</td>
+
+<td>
+West Bank and Gaza
+</td>
+
+<td>
+West Bank and Gaza
+</td>
+
+<td>
+West Bank and Gaza
+</td>
+
+<td>
+PS
+</td>
+
+<td>
+Israeli new shekel
+</td>
+
+<td>
+National accounts data are provided in the US dollar.
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+GZ
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+0
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2017
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2019/20
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2016/17
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ROU
+</td>
+
+<td>
+Romania
+</td>
+
+<td>
+Romania
+</td>
+
+<td>
+Romania
+</td>
+
+<td>
+RO
+</td>
+
+<td>
+New Romanian leu
+</td>
+
+<td>
+The World Bank systematically assesses the appropriateness of official exchange rates as conversion factors. In this country, multiple or dual exchange rate activity exists and must be accounted for appropriately in underlying statistics. An alternative estimate (“alternative conversion factor” - PA.NUS.ATLS) is thus calculated as a weighted average of the different exchange rates in use in the country. Doing so better reflects economic reality and leads to more accurate cross-country comparisons and country classifications by income level. For this country, this applies to the period 1987-1992. Alternative conversion factors are used in the Atlas methodology and elsewhere in World Development Indicators as single-year conversion factors.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+RO
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2005.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+Romania Reproductive Health Survey, 2004
+</td>
+
+<td>
+Income survey (IS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+RUS
+</td>
+
+<td>
+Russia
+</td>
+
+<td>
+Russian Federation
+</td>
+
+<td>
+Russian Federation
+</td>
+
+<td>
+RU
+</td>
+
+<td>
+Russian ruble
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+RU
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2016.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Russian Federation Reproductive Health Survey, 2011
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SAU
+</td>
+
+<td>
+Saudi Arabia
+</td>
+
+<td>
+Saudi Arabia
+</td>
+
+<td>
+Kingdom of Saudi Arabia
+</td>
+
+<td>
+SA
+</td>
+
+<td>
+Saudi Arabian riyal
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+SA
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+Value added at producer prices (VAP)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Demographic Survey 2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+2006.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SEN
+</td>
+
+<td>
+Senegal
+</td>
+
+<td>
+Senegal
+</td>
+
+<td>
+Republic of Senegal
+</td>
+
+<td>
+SN
+</td>
+
+<td>
+West African CFA franc
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Sub-Saharan Africa
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+SN
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IDA
+</td>
+
+<td>
+HIPC
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2013
+</td>
+
+<td>
+Continuous Demographic and Health Survey, 2017
+</td>
+
+<td>
+Priority survey (PS), 2011/12
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2013
+</td>
+
+<td>
+2012.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SGP
+</td>
+
+<td>
+Singapore
+</td>
+
+<td>
+Singapore
+</td>
+
+<td>
+Republic of Singapore
+</td>
+
+<td>
+SG
+</td>
+
+<td>
+Singapore dollar
+</td>
+
+<td>
+Fiscal year end: March 31; reporting period for national accounts data: CY.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+SG
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected). Population figures compiled from administrative registers.
+</td>
+
+<td>
+National Health Survey, 2010
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SLV
+</td>
+
+<td>
+El Salvador
+</td>
+
+<td>
+El Salvador
+</td>
+
+<td>
+Republic of El Salvador
+</td>
+
+<td>
+SV
+</td>
+
+<td>
+U.S. dollar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+SV
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2014
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2007-2008
+</td>
+
+<td>
+1998.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SVK
+</td>
+
+<td>
+Slovak Republic
+</td>
+
+<td>
+Slovak Republic
+</td>
+
+<td>
+Slovak Republic
+</td>
+
+<td>
+SK
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2009: 1 euro = 30.126 Slovak koruna. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+SK
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SVN
+</td>
+
+<td>
+Slovenia
+</td>
+
+<td>
+Slovenia
+</td>
+
+<td>
+Republic of Slovenia
+</td>
+
+<td>
+SI
+</td>
+
+<td>
+Euro
+</td>
+
+<td>
+A simple multiplier is used to convert the national currencies of EMU members to euros. The following irrevocable euro conversion rate entered into force on January 1, 2007: 1 euro = 239.64 Slovenian tolar. Please note that historical data are not actual euros and are not comparable or suitable for aggregation across countries.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+SI
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Euro area
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2018" type="1">
+<li>Population figures compiled from administrative registers.
+</li></ol></td>
+
+<td>
+World Health Survey, 2003
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2013.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SWE
+</td>
+
+<td>
+Sweden
+</td>
+
+<td>
+Sweden
+</td>
+
+<td>
+Kingdom of Sweden
+</td>
+
+<td>
+SE
+</td>
+
+<td>
+Swedish krona
+</td>
+
+<td>
+Fiscal year end: June 30; reporting period for national accounts data: CY.
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+SE
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers.
+</li></ol></td>
+
+<td>
+NULL
+</td>
+
+<td>
+Income survey (IS), 2015
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2010
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+SYC
+</td>
+
+<td>
+Seychelles
+</td>
+
+<td>
+Seychelles
+</td>
+
+<td>
+Republic of Seychelles
+</td>
+
+<td>
+SC
+</td>
+
+<td>
+Seychelles rupee
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Sub-Saharan Africa
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+SC
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2013
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+THA
+</td>
+
+<td>
+Thailand
+</td>
+
+<td>
+Thailand
+</td>
+
+<td>
+Kingdom of Thailand
+</td>
+
+<td>
+TH
+</td>
+
+<td>
+Thai baht
+</td>
+
+<td>
+Fiscal year end: September 30; reporting period for national accounts data: CY.
+</td>
+
+<td>
+East Asia &amp; Pacific
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+TH
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2002.0
+</td>
+
+<td>
+Value added at producer prices (VAP)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2019
+</td>
+
+<td>
+Integrated household survey (IHS), 2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2013
+</td>
+
+<td>
+2011.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+TUN
+</td>
+
+<td>
+Tunisia
+</td>
+
+<td>
+Tunisia
+</td>
+
+<td>
+Republic of Tunisia
+</td>
+
+<td>
+TN
+</td>
+
+<td>
+Tunisian dinar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Middle East &amp; North Africa
+</td>
+
+<td>
+Lower middle income
+</td>
+
+<td>
+TN
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 1993 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM5 (Converted into BPM6 by IMF)
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Budgetary central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2014
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2018
+</td>
+
+<td>
+Integrated household survey (IHS), 2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2010.0
+</td>
+
+<td>
+2017.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+TUR
+</td>
+
+<td>
+Türkiye
+</td>
+
+<td>
+Türkiye
+</td>
+
+<td>
+Republic of Türkiye
+</td>
+
+<td>
+TR
+</td>
+
+<td>
+New Turkish lira
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+TR
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2009.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+<ol start="2011" type="1">
+<li>Population figures compiled from administrative registers in combination with other sources of data, such as sample surveys.
+</li></ol></td>
+
+<td>
+Demographic and Health Survey, 2018
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+UKR
+</td>
+
+<td>
+Ukraine
+</td>
+
+<td>
+Ukraine
+</td>
+
+<td>
+Ukraine
+</td>
+
+<td>
+UA
+</td>
+
+<td>
+Ukrainian hryvnia
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Europe &amp; Central Asia
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+UA
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2016.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2012
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2014.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+URY
+</td>
+
+<td>
+Uruguay
+</td>
+
+<td>
+Uruguay
+</td>
+
+<td>
+Oriental Republic of Uruguay
+</td>
+
+<td>
+UY
+</td>
+
+<td>
+Uruguayan peso
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Latin America &amp; Caribbean
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+UY
+</td>
+
+<td>
+2016
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Special trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+Multiple Indicator Cluster Survey, 2012/13
+</td>
+
+<td>
+Integrated household survey (IHS), 2017
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+2011.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+USA
+</td>
+
+<td>
+United States
+</td>
+
+<td>
+United States
+</td>
+
+<td>
+United States of America
+</td>
+
+<td>
+US
+</td>
+
+<td>
+U.S. dollar
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+North America
+</td>
+
+<td>
+High income
+</td>
+
+<td>
+US
+</td>
+
+<td>
+Original chained constant price data are rescaled.
+</td>
+
+<td>
+2015.0
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard Plus (SDDS Plus)
+</td>
+
+<td>
+2020 (expected)
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Labor force survey (LFS), 2016
+</td>
+
+<td>
+Yes
+</td>
+
+<td>
+2012
+</td>
+
+<td>
+2011.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+ZAF
+</td>
+
+<td>
+South Africa
+</td>
+
+<td>
+South Africa
+</td>
+
+<td>
+Republic of South Africa
+</td>
+
+<td>
+ZA
+</td>
+
+<td>
+South African rand
+</td>
+
+<td>
+Fiscal year end: March 31; reporting period for national accounts data: CY.
+</td>
+
+<td>
+Sub-Saharan Africa
+</td>
+
+<td>
+Upper middle income
+</td>
+
+<td>
+ZA
+</td>
+
+<td>
+2015
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Value added at basic prices (VAB)
+</td>
+
+<td>
+IBRD
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+Country uses the 2008 System of National Accounts methodology
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+BPM6
+</td>
+
+<td>
+Actual
+</td>
+
+<td>
+General trade system
+</td>
+
+<td>
+Consolidated central government
+</td>
+
+<td>
+Special Data Dissemination Standard (SDDS)
+</td>
+
+<td>
+2011
+</td>
+
+<td>
+Demographic and Health Survey, 2016
+</td>
+
+<td>
+Expenditure survey/budget survey (ES/BS), 2014/15
+</td>
+
+<td>
+NULL
+</td>
+
+<td>
+2007
+</td>
+
+<td>
+2010.0
+</td>
+
+<td>
+2018.0
+</td>
+
+<td>
+NULL
+</td>
+
+</tr>
+
+<tr>
+<td colspan="31" style="text-align: left;">
+Total Rows: 77, Total Columns: 31
 </td>
 </tr>
 </tbody>
 
 </table>
-</div>
-</div>
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>:::</p>
+<p>:::</p>
 <section id="task-14" class="level2">
 <h2 class="anchored" data-anchor-id="task-14">Task 14</h2>
-<div id="f45bad22" class="cell" data-execution_count="19">
+<div id="4c95b7ae" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Write a single query that show the number of countries in each </span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">## &quot;Region&quot;-&quot;Income Group&quot; pair.  The table should have 3 columns:</span></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">## region, income group, and no.of.countries.</span></span>
@@ -8480,7 +18479,7 @@ Total Rows: 49, Total Columns: 1
 </section>
 <section id="task-15" class="level2">
 <h2 class="anchored" data-anchor-id="task-15">Task 15</h2>
-<div id="1c148ac7" class="cell" data-execution_count="20">
+<div id="ba529785" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Examine the result from task 14. It would be really cool to</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co">## present the results of this table in a 2-D form, with </span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co">## columns for each income category (high, upper middle, lower middle, low, other)</span></span>
@@ -9481,7 +19480,7 @@ Total Rows: 119, Total Columns: 1
 </section>
 <section id="task-16" class="level2">
 <h2 class="anchored" data-anchor-id="task-16">Task 16</h2>
-<div id="77e4a76a" class="cell" data-execution_count="21">
+<div id="765af9d8" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Wow! what a cool table!  It is very interesting to see where the money</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co">## sits around the world.  Using the general approach from Task 14 above</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">## and write a query to return the single region with the most lower-income</span></span>
@@ -9536,7 +19535,7 @@ Total Rows: 1, Total Columns: 1
 </section>
 <section id="task-17" class="level2">
 <h2 class="anchored" data-anchor-id="task-17">Task 17</h2>
-<div id="10a20754" class="cell" data-execution_count="22">
+<div id="4f5f2520" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Are you getting the hand of this? Good! We need to take a look at all</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co">## the countries in the same region and with the same income category as</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co">## the Marshall Islands.</span></span>
@@ -9902,7 +19901,7 @@ Total Rows: 40, Total Columns: 1
 </section>
 <section id="task-18" class="level2">
 <h2 class="anchored" data-anchor-id="task-18">Task 18</h2>
-<div id="02bbc851" class="cell" data-execution_count="23">
+<div id="0e73b379" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">## OK - let&#39;s raise the heat in the kitchen! Review the output from task 14.</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="co">## You&#39;ll see that some of the regions do not contain all of the income</span></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co">## levels.  For example, the Europe &amp; Central Asia region does not have</span></span>
@@ -11039,7 +21038,7 @@ Total Rows: 90, Total Columns: 2
 </section>
 <section id="task-19" class="level2">
 <h2 class="anchored" data-anchor-id="task-19">Task 19</h2>
-<div id="3d02a7b4" class="cell" data-execution_count="24">
+<div id="4624bd17" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Hot enough, yet?  Let&#39;s go for ghost-pepper HOT!  Now let&#39;s build some</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co">## percentage tables.  For example, across the entire sample, what</span></span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">## is the percentage of total countries in each income category?</span></span>
@@ -11955,7 +21954,7 @@ Total Rows: 108, Total Columns: 1
 </section>
 <section id="task-20" class="level2">
 <h2 class="anchored" data-anchor-id="task-20">Task 20</h2>
-<div id="45b7bab5" class="cell" data-execution_count="25">
+<div id="1a1a4999" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">## SLAM DUNK TIME!  Using the resulting table CTEs from Task 19,</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co">## print table similar to the table in Task 15, with Income group in the</span></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co">## columns, Region in the rows and Percent of total in each cell of the table.</span></span>
@@ -12004,7 +22003,7 @@ Total Rows: 1, Total Columns: 1
 </section>
 <section id="task-21" class="level2">
 <h2 class="anchored" data-anchor-id="task-21">Task 21</h2>
-<div id="23ce4ba0" class="cell" data-execution_count="26">
+<div id="013212ae" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">## ANOTHER DUNK!  Using the resulting table CTEs from Task 19,</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co">## print a table listing the number, totals and percentage of countries</span></span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co">## by income category.</span></span>
@@ -12104,6 +22103,9 @@ Now is your chance to remind your future self what you were thinking!)
 </ul>
 <p>Test your DB connection</p>
 </section>
+</div>
+</section>
+</div>
 </div>
 </section>
 </div>
