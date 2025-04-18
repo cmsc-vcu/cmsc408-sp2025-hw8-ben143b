@@ -91,9 +91,9 @@ List all non-countries.
 ## (skills: select, where)
 
 run_sql_and_return_html(cnx,"""
-select *
-from world_bank_data.wdi_country
-limit 10
+SELECT "Short Name"
+FROM world_bank_data.wdi_country
+WHERE "Region" = 'Aggregates';
 """)
 ```
 
@@ -141,9 +141,10 @@ According to the World Bank, in 2020 there were how many countries in the world?
 ## (skills: select, aggregate)
 
 run_sql_and_return_html(cnx,"""
-SELECT COUNT(*) AS "Countries with 2020 Census"
-FROM wdi_country
-WHERE `Latest population census` LIKE '2020%%';
+SELECT COUNT(*)
+FROM world_bank_data.wdi_country
+WHERE "Region" != 'Aggregates';
+
 """)
 
 ```
@@ -192,8 +193,10 @@ List the country full names and regions for all countries in north america.
 ## (skills: select, where, order by)
 
 run_sql_and_return_html(cnx,"""
-SELECT DISTINCT `Income Group`
-FROM wdi_country;
+SELECT "Region", "Short Name"
+FROM world_bank_data.wdi_country
+WHERE "Region" = 'North America';
+
 """)
 
 ```
@@ -223,11 +226,9 @@ WHERE `Country Code` = 'QAT';
 ## (skills: select, where, order by)
 
 run_sql_and_return_html(cnx,"""
-SELECT Region, `Income Group`, COUNT(*) AS "Country Count"
-FROM wdi_country
-GROUP BY Region, `Income Group`
-ORDER BY Region, `Income Group`;
-
+SELECT "Country Code", "Short Name"
+FROM world_bank_data.wdi_country
+WHERE "Region" != 'Aggregates';
 """)
 
 ```
@@ -260,10 +261,9 @@ ORDER BY count DESC;
 ## in the first column.
 
 run_sql_and_return_html(cnx,"""
-SELECT `Short Name`
-FROM wdi_country
-WHERE `Balance of Payments Manual in use` = 'BPM6';
-
+SELECT *
+FROM world_bank_data.wdi_country
+WHERE "Region" IS NULL OR "Income Group" IS NULL;
 """)
 
 ```
@@ -277,9 +277,9 @@ WHERE `Balance of Payments Manual in use` = 'BPM6';
 ## NOTE - if you get this wrong, all subsequent tables will be wrong!
 
 execute_ddl(cnx,"""
-UPDATE wdi_country
-  SET `Income Group` = 'High income'
-  WHERE `Country Code` = 'QAT';
+UPDATE world_bank_data.wdi_country
+SET "Region" = 'Sub-Saharan Africa'
+WHERE "Short Name" = 'Western Sahara';
 """)
 ```
 
@@ -304,10 +304,9 @@ WHERE `IMF data dissemination standard` LIKE '%%SDDS%%';
 ## (skills: select, aggregate, group by, order by)
 
 run_sql_and_return_html(cnx,"""
-SELECT `Short Name`
-FROM wdi_country
-WHERE `Source of most recent Income and expenditure data` IS NULL OR `Source of most recent Income and expenditure data` = '';
-
+SELECT DISTINCT "Region", "Income Group"
+FROM world_bank_data.wdi_country
+WHERE "Region" != 'Aggregates';
 """)
 
 ```
@@ -328,10 +327,11 @@ WHERE `Source of most recent Income and expenditure data` IS NULL OR `Source of 
 ## (skills: select, aggregate, group by, nested query)
 
 run_sql_and_return_html(cnx,"""
-SELECT `Short Name`
-FROM wdi_country
-WHERE `Vital registration complete` = 'Yes';
-
+SELECT "Region", "Income Group", COUNT(*) AS num_countries
+FROM world_bank_data.wdi_country
+WHERE "Region" != 'Aggregates'
+GROUP BY "Region", "Income Group"
+ORDER BY "Region", "Income Group";
 """)
 
 ```
@@ -351,9 +351,12 @@ WHERE `Vital registration complete` = 'Yes';
 ## (skills: select, aggregate, group by, nested query, order by, limit)
 
 run_sql_and_return_html(cnx,"""
-SELECT COUNT(*) AS "Low Income Countries"
-FROM wdi_country
-WHERE `Income Group` = 'Low income';
+SELECT "Region", COUNT(*) AS num_countries
+FROM world_bank_data.wdi_country
+WHERE "Region" != 'Aggregates' AND "Income Group" = 'Low income'
+GROUP BY "Region"
+ORDER BY num_countries DESC
+LIMIT 1;
 """)
 
 ```
@@ -370,11 +373,19 @@ WHERE `Income Group` = 'Low income';
 ## (skills: select, where, subquery)
 
 run_sql_and_return_html(cnx,"""
-SELECT `Short Name`
-FROM wdi_country
-WHERE `Income Group` = 'High income'
-  AND Region = 'Europe & Central Asia';
-
+SELECT "Short Name"
+FROM world_bank_data.wdi_country
+WHERE "Region" = (
+    SELECT "Region"
+    FROM world_bank_data.wdi_country
+    WHERE "Short Name" = 'Marshall Islands'
+)
+AND "Income Group" = (
+    SELECT "Income Group"
+    FROM world_bank_data.wdi_country
+    WHERE "Short Name" = 'Marshall Islands'
+)
+AND "Short Name" != 'Marshall Islands';
 """)
 
 ```
@@ -426,9 +437,17 @@ WHERE CAST(`National accounts base year` AS UNSIGNED) > 2010;
 ## (skills: select, where, subqueries, joins, aggregate functions)
 
 run_sql_and_return_html(cnx,"""
-SELECT `Short Name`
-FROM wdi_country
-WHERE `System of trade` = 'General trade system';
+WITH total AS (
+  SELECT COUNT(*) AS total_countries
+  FROM world_bank_data.wdi_country
+  WHERE "Region" != 'Aggregates'
+)
+SELECT "Region", 
+       COUNT(*) AS num_countries,
+       ROUND(100.0 * COUNT(*) / total.total_countries, 2) AS pct
+FROM world_bank_data.wdi_country, total
+WHERE "Region" != 'Aggregates'
+GROUP BY "Region", total.total_countries;
 
 """)
 
