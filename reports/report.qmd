@@ -352,23 +352,23 @@ ORDER BY
 ## and a column for the row totals.
 ## (skills: select, aggregate, group by, nested query)
 
-run_sql_and_return_html(cnx, """
+run_sql_and_return_html(cnx,"""
 SELECT
-    COALESCE(Region, 'No Region') AS Region,
-    CAST(SUM(CASE WHEN `Income Group` = 'High income' THEN 1 ELSE 0 END) AS DECIMAL(10,1)) AS `High income`,
-    CAST(SUM(CASE WHEN `Income Group` = 'Upper middle income' THEN 1 ELSE 0 END) AS DECIMAL(10,1)) AS `Upper middle income`,
-    CAST(SUM(CASE WHEN `Income Group` = 'Lower middle income' THEN 1 ELSE 0 END) AS DECIMAL(10,1)) AS `Lower middle income`,
-    CAST(SUM(CASE WHEN `Income Group` = 'Low income' THEN 1 ELSE 0 END) AS DECIMAL(10,1)) AS `Low income`,
-    CAST(SUM(CASE WHEN `Income Group` IS NULL THEN 1 ELSE 0 END) AS DECIMAL(10,1)) AS `No Income Group`,
-    CAST(COUNT(*) AS DECIMAL(10,1)) AS Total
+    Region,
+    SUM(CASE WHEN `Income Group` = 'High income' THEN 1 ELSE 0 END) AS `High Income`,
+    SUM(CASE WHEN `Income Group` = 'Upper middle income' THEN 1 ELSE 0 END) AS `Upper Middle Income`,
+    SUM(CASE WHEN `Income Group` = 'Lower middle income' THEN 1 ELSE 0 END) AS `Lower Middle Income`,
+    SUM(CASE WHEN `Income Group` = 'Low income' THEN 1 ELSE 0 END) AS `Low Income`,
+    SUM(CASE WHEN `Income Group` IS NULL THEN 1 ELSE 0 END) AS `No Income Group`,
+    COUNT(*) AS `Total Countries`
 FROM
     wdi_country
 GROUP BY
     Region
 ORDER BY
     Region;
-
 """)
+
 ```
 
 
